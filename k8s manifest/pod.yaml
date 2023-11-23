@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: node-api
-    image: adarshk27r/node-api
+    image: adarshk27r/node-api:1.0
     resources:
       limits:
         memory: "128Mi"
