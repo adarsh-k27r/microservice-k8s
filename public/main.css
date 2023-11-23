@@ -7,7 +7,7 @@
 
 
 .sec1{
-    height:25vh;
+    height:fit-content;
     color:black;
     background-color: white;
     display: flex;
@@ -17,7 +17,7 @@
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
-    word-spacing: 0.02;
+    padding:1rem;
     
 }
 
@@ -26,14 +26,14 @@
 }
 
 .sec1 h4{
-    margin-top: 10px;
+    margin: 10px 0;
     font-weight: 540;
     color:blueviolet;
     font-size: 1.01rem;
 }
 
 .sec2{
-    height:25vh;
+    height:fit-content;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -146,6 +146,10 @@
 
  }
 
+ .sec6 h3{
+    text-align: center;
+ }
+
  .sec6 li{
     padding:1em;
  }
@@ -154,4 +158,20 @@
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
  }
+
+ @media only screen and (max-width: 600px) {
+
+    .sec3 .tools{
+        margin-left: 1em;
+    }
+    
+    .sec6{
+        background-color: #FAF6F0;
+    }
+
+    .sec6 ul{
+        flex-direction: column;
+    }
+   
+  }
 

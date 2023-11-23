@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+spec:
+  selector:
+    matchLabels:
+      app: node-pod
+  template:
+    metadata:
+      labels:
+        app: node-pod
+    spec:
+      containers:
+      - name: node-api
+        image: adarshk27r/node-api
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 4000
