@@ -1,245 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="docker-logo.png" type="image/x-icon" />
+    <title>microservice-k8s</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="docker-logo.png" type="image/x-icon">
-    <title>Project details</title>
-</head>
-
-<body>
+  <body>
     <div class="sec1">
-        <h3>Project Title</h3> <br>
-        <h2>Containerization of Web APIs using Docker and Kubernetes</h2>
-        <h4>Maintainer: Adarsh Kumar <br> Roll No: 21cs3060 <br> Institute: RGIPT, Jais</h4>
+      <h3>Project Title</h3>
+      <br />
+      <h2>Containerization of Web API using Docker and Kubernetes</h2>
+      <h4>
+        Maintainer: Adarsh Kumar <br />
+        Roll No: 21cs3060 <br />
+        Institute: RGIPT, Jais
+      </h4>
     </div>
 
     <hr />
 
     <div class="sec2">
-        <h2>Overview</h2>
-        <p>
-            In this project, I have containerized a simple web API using the container engine Docker and
-            the most popular container orchestration platform Kubernetes.
-            This page you are reading right now is containerized!
-        </p>
-
+      <h2>Overview</h2>
+      <p>
+        In this project, I have containerized a Node API using the container
+        engine Docker and the most popular container orchestration platform
+        Kubernetes. This page you are reading right now is containerized!
+      </p>
     </div>
 
     <hr />
 
     <div class="sec3">
-        <div class="tools">
-            <h2>Tools & Technologies</h2>
-            <ol>
-                <li>Docker Desktop - Docker runtime</li>
-                <li>Kubernetes Engine</li>
-                <li>Kubectl - K8's CLI</li>
-                <li>Minikube - Local env single cluster K8's </li>
-                <li>Google Kubernetes Engine - Cloud based multi-cluster deployment </li>
-                <li>Node.js - server API </li>
-                <li>HTML/CSS - Frontend page</li>
-                <li>YAML files - K8's manifest configuration files</li>
-            </ol>
-        </div>
+      <div class="tools">
+        <h2>Tools & Technologies</h2>
+        <ol>
+          <li>Docker Desktop - Docker runtime</li>
+          <li>Kubernetes Engine</li>
+          <li>Kubectl - K8's CLI</li>
+          <li>Minikube - Local env single cluster K8's</li>
+          <li>
+            Google Kubernetes Engine - Cloud based multi-cluster deployment
+          </li>
+          <li>Node.js - server API</li>
+          <li>HTML/CSS - Frontend page</li>
+          <li>YAML files - K8's manifest configuration files</li>
+        </ol>
+      </div>
     </div>
 
     <hr />
 
-
     <div class="sec4">
-        <div class="head">
-            <h1>FAQs</h1>
-        </div> <br> <br>
-        <h2>1. What is Containerization?</h2> <br />
-        <p>Containerization is a software deployment process that bundles an application's code with all the files and
-            libraries it needs to run on any infrastructure. Traditionally, to run any application on your computer, you
-            had to install the version that matched your machine's operating system. For example, you needed to install
-            the Windows version of a software package on a Windows machine. However, with containerization, you can
-            create a single software package, or container, that runs on all types of devices and operating systems.</p>
-        <br />
+      <div class="head">
+        <h1>FAQs</h1>
+      </div>
+      <br />
+      <br />
+      <h2>1. What is Containerization?</h2>
+      <br />
+      <p>
+        Containerization is a software deployment process that bundles an
+        application's code with all the files and libraries it needs to run on
+        any infrastructure. Traditionally, to run any application on your
+        computer, you had to install the version that matched your machine's
+        operating system. For example, you needed to install the Windows version
+        of a software package on a Windows machine. However, with
+        containerization, you can create a single software package, or
+        container, that runs on all types of devices and operating systems.
+      </p>
+      <br />
 
-        <h2 class="vm-vs">Container Architecture</h2> <br>
-        <img class="hred" src="container-ar.jpg" alt="container-architecture" /> <br>
+      <h2 class="vm-vs">Container Architecture</h2>
+      <br />
+      <img class="hred" src="container-ar.jpg" alt="container-architecture" />
+      <br />
 
-        <h2>2. What are the Benefits of Containerization?</h2> <br>
-        <p>
-            Developers use containerization to build and deploy modern applications because of the following advantages.
-        </p>
-        <br>
+      <h2>2. What are the Benefits of Containerization?</h2>
+      <br />
+      <p>
+        Developers use containerization to build and deploy modern applications
+        because of the following advantages.
+      </p>
+      <br />
 
-        <h3> 1. Portability</h3>
-        <p>
-            Software developers use containerization to deploy applications in multiple environments without rewriting
-            the
-            program code. They build an application once and deploy it on multiple operating systems. For example, they
-            run
-            the same containers on Linux and Windows operating systems. Developers also upgrade legacy application code
-            to
-            modern versions using containers for deployment. </p> <br>
+      <h3>1. Portability</h3>
+      <p>
+        Software developers use containerization to deploy applications in
+        multiple environments without rewriting the program code. They build an
+        application once and deploy it on multiple operating systems. For
+        example, they run the same containers on Linux and Windows operating
+        systems. Developers also upgrade legacy application code to modern
+        versions using containers for deployment.
+      </p>
+      <br />
 
-        <h3> 2. Scalability</h3>
-        <p>
-            Containers are lightweight software components that run efficiently. For example, a virtual machine can
-            launch a
-            containerized application faster because it doesn't need to boot an operating system. Therefore, software
-            developers can easily add multiple containers for different applications on a single machine. The container
-            cluster uses computing resources from the same shared operating system, but one container doesn't interfere
-            with
-            the operation of other containers. </p><br>
+      <h3>2. Scalability</h3>
+      <p>
+        Containers are lightweight software components that run efficiently. For
+        example, a virtual machine can launch a containerized application faster
+        because it doesn't need to boot an operating system. Therefore, software
+        developers can easily add multiple containers for different applications
+        on a single machine. The container cluster uses computing resources from
+        the same shared operating system, but one container doesn't interfere
+        with the operation of other containers.
+      </p>
+      <br />
 
-        <h3> 3. Fault tolerance</h3>
-        <p>
-            Software development teams use containers to build fault-tolerant applications. They use multiple containers
-            to
-            run microservices on the cloud. Because containerized microservices operate in isolated user spaces, a
-            single
-            faulty container doesn't affect the other containers. This increases the resilience and availability of the
-            application. </p> <br>
+      <h3>3. Fault tolerance</h3>
+      <p>
+        Software development teams use containers to build fault-tolerant
+        applications. They use multiple containers to run microservices on the
+        cloud. Because containerized microservices operate in isolated user
+        spaces, a single faulty container doesn't affect the other containers.
+        This increases the resilience and availability of the application.
+      </p>
+      <br />
 
-        <h3> 4. Agility</h3>
-        <p>
-            Containerized applications run in isolated computing environments. Software developers can troubleshoot and
-            change the application code without interfering with the operating system, hardware, or other application
-            services. They can shorten software release cycles and work on updates quickly with the container model.
-        </p> <br>
+      <h3>4. Agility</h3>
+      <p>
+        Containerized applications run in isolated computing environments.
+        Software developers can troubleshoot and change the application code
+        without interfering with the operating system, hardware, or other
+        application services. They can shorten software release cycles and work
+        on updates quickly with the container model.
+      </p>
+      <br />
 
-        <h2>3. What are containerization use cases?</h2> <br>
-        <p>The following are some use cases of containerization. </p><br>
+      <h2>3. What are containerization use cases?</h2>
+      <br />
+      <p>The following are some use cases of containerization.</p>
+      <br />
 
-        <h3> 1. Cloud migration</h3>
-        <p>
-            Cloud migration, or the lift-and-shift approach, is a software strategy that involves encapsulating legacy
-            applications in containers and deploying them in a cloud computing environment. Organizations can modernize
-            their applications without rewriting the entire software code. </p> <br>
+      <h3>1. Cloud migration</h3>
+      <p>
+        Cloud migration, or the lift-and-shift approach, is a software strategy
+        that involves encapsulating legacy applications in containers and
+        deploying them in a cloud computing environment. Organizations can
+        modernize their applications without rewriting the entire software code.
+      </p>
+      <br />
 
-        <h3> 2. Adoption of microservice architecture</h3>
-        <p>
-            Organizations seeking to build cloud applications with microservices require containerization technology.
-            The
-            microservice architecture is a software development approach that uses multiple, interdependent software
-            components to deliver a functional application. Each microservice has a unique and specific function. A
-            modern
-            cloud application consists of multiple microservices. For example, a video streaming application might have
-            microservices for data processing, user tracking, billing, and personalization. Containerization provides
-            the
-            software tool to pack microservices as deployable programs on different platforms. </p> <br>
+      <h3>2. Adoption of microservice architecture</h3>
+      <p>
+        Organizations seeking to build cloud applications with microservices
+        require containerization technology. The microservice architecture is a
+        software development approach that uses multiple, interdependent
+        software components to deliver a functional application. Each
+        microservice has a unique and specific function. A modern cloud
+        application consists of multiple microservices. For example, a video
+        streaming application might have microservices for data processing, user
+        tracking, billing, and personalization. Containerization provides the
+        software tool to pack microservices as deployable programs on different
+        platforms.
+      </p>
+      <br />
 
-        <h3> 3. IoT devices</h3>
-        <p>
-            Internet of Things (IoT) devices contain limited computing resources, making manual software updating a
-            complex
-            process. Containerization allows developers to deploy and update applications across IoT devices easily.</p>
-        <br>
+      <h3>3. IoT devices</h3>
+      <p>
+        Internet of Things (IoT) devices contain limited computing resources,
+        making manual software updating a complex process. Containerization
+        allows developers to deploy and update applications across IoT devices
+        easily.
+      </p>
+      <br />
 
-        <h2>4. What is container orchestration?</h2> <br>
-        <p>
-            Container orchestration is a software technology that allows the automatic management of containers. This is
-            necessary for modern cloud application development because an application might contain thousands of
-            microservices in their respective containers. The large number of containerized microservices makes it
-            impossible for software developers to manage them manually. </p><br>
+      <h2>4. What is container orchestration?</h2>
+      <br />
+      <p>
+        Container orchestration is a software technology that allows the
+        automatic management of containers. This is necessary for modern cloud
+        application development because an application might contain thousands
+        of microservices in their respective containers. The large number of
+        containerized microservices makes it impossible for software developers
+        to manage them manually.
+      </p>
+      <br />
 
-        <h2 class="vm-vs">Virtual-Machines vs Containers</h2> <br>
-        <img src="vm-vs-docker2.png" alt="vm-vs-docker2" /> <br>
+      <h2 class="vm-vs">Virtual-Machines vs Containers</h2>
+      <br />
+      <img src="vm-vs-docker2.png" alt="vm-vs-docker2" /> <br />
 
-        <h3>Benefits of container orchestration</h3>
-        <p>
-            Developers use container orchestration tools to automatically start, stop, and manage containers. Container
-            orchestrators allow developers to scale cloud applications precisely and avoid human errors. For example,
-            you
-            can verify that containers are deployed with adequate resources from the host platform.
+      <h3>Benefits of container orchestration</h3>
+      <p>
+        Developers use container orchestration tools to automatically start,
+        stop, and manage containers. Container orchestrators allow developers to
+        scale cloud applications precisely and avoid human errors. For example,
+        you can verify that containers are deployed with adequate resources from
+        the host platform.
+      </p>
+      <br />
 
-        </p> <br>
+      <h2>5. What are the types of container technology?</h2>
+      <br />
+      <p>
+        The following are some examples of popular technologies that developers
+        use for containerization.
+      </p>
+      <br />
 
-        <h2>5. What are the types of container technology?</h2> <br>
-        <p>The following are some examples of popular technologies that developers use for containerization. </p> <br>
+      <h3>1. Docker</h3>
+      <p>
+        Docker, or Docker Engine, is a popular open-source container runtime
+        that allows software developers to build, deploy, and test containerized
+        applications on various platforms. Docker containers are self-contained
+        packages of applications and related files that are created with the
+        Docker framework.
+      </p>
+      <br />
 
-        <h3>1. Docker</h3>
-        <p>
-            Docker, or Docker Engine, is a popular open-source container runtime that allows software developers to
-            build,
-            deploy, and test containerized applications on various platforms. Docker containers are self-contained
-            packages
-            of applications and related files that are created with the Docker framework. </p><br>
+      <h2 class="vm-vs">Docker Architecture</h2>
+      <br />
+      <img src="docker-ar.png" alt="docker-architecture" /> <br />
 
-        <h2 class="vm-vs">Docker Architecture</h2> <br>
-        <img src="docker-ar.png" alt="docker-architecture" /> <br>
+      <h3>2. Linux</h3>
+      <p>
+        Linux is an open-source operating system with built-in container
+        technology. Linux containers are self-contained environments that allow
+        multiple Linux-based applications to run on a single host machine.
+        Software developers use Linux containers to deploy applications that
+        write or read large amounts of data. Linux containers do not copy the
+        entire operating system to their virtualized environment. Instead, the
+        containers consist of necessary functionalities allocated in the Linux
+        namespace.
+      </p>
+      <br />
 
-        <h3>2. Linux</h3>
-        <p>
-            Linux is an open-source operating system with built-in container technology. Linux containers are
-            self-contained
-            environments that allow multiple Linux-based applications to run on a single host machine. Software
-            developers
-            use Linux containers to deploy applications that write or read large amounts of data. Linux containers do
-            not
-            copy the entire operating system to their virtualized environment. Instead, the containers consist of
-            necessary
-            functionalities allocated in the Linux namespace. </p> <br>
+      <h3>3. Kubernetes</h3>
+      <p>
+        Kubernetes is a popular open-source container orchestrator that software
+        developers use to deploy, scale, and manage a vast number of
+        microservices. It has a declarative model that makes automating
+        containers easier. The declarative model ensures that Kubernetes takes
+        the appropriate action to fulfil the requirements based on the
+        configuration files.
+      </p>
+      <br />
 
-        <h3>3. Kubernetes</h3>
-        <p>
-            Kubernetes is a popular open-source container orchestrator that software developers use to deploy, scale,
-            and
-            manage a vast number of microservices. It has a declarative model that makes automating containers easier.
-            The
-            declarative model ensures that Kubernetes takes the appropriate action to fulfil the requirements based on
-            the
-            configuration files.</p> <br>
-
-        <h2 class="vm-vs">K8's Architecture</h2> <br>
-        <img class="hred2" src="ar.png" alt="Kubernetes-architecture" /> <br>
-
+      <h2 class="vm-vs">K8's Architecture</h2>
+      <br />
+      <img class="hred2" src="ar.png" alt="Kubernetes-architecture" /> <br />
     </div>
 
     <hr />
 
     <div class="sec5">
-        <h2>References</h2> <br>
-        <h3>1. Articles & Blogs</h3> <br>
-        <ul>
-            <li><a href="https://aws.amazon.com/what-is/containerization/">What is Containerization?</a></li>
-            <li><a href="https://www.guru99.com/linux-commands-cheat-sheet.html">Linux command cheatsheet</a></li>
-            <li><a href="https://blog.wemakedevs.org/getting-started-with-docker">Getting started with Docker.</a></li>
-            <li><a href="https://blog.wemakedevs.org/getting-started-with-kubernetes">Getting started with
-                    Kubernetes.</a></li>
-        </ul> <br>
+      <h2>References</h2>
+      <br />
+      <h3>1. Articles & Blogs</h3>
+      <br />
+      <ul>
+        <li>
+          <a href="https://aws.amazon.com/what-is/containerization/"
+            >What is Containerization?</a
+          >
+        </li>
+        <li>
+          <a href="https://www.guru99.com/linux-commands-cheat-sheet.html"
+            >Linux command cheatsheet</a
+          >
+        </li>
+      </ul>
+      <br />
 
-        <h3>2. Official Documentation</h3> <br>
-        <ul>
-            <li><a href="https://docs.docker.com/">Docker</a></li>
-            <li><a href="https://kubernetes.io/docs/home/">Kubernetes</a></li>
-            <li><a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/">Kubectl cheatsheet</a></li>
-            <li><a href="https://minikube.sigs.k8s.io/docs/start/">Minikube</a></li>
-            <li><a href="https://cloud.google.com/kubernetes-engine?hl=en">Google Kubernetes Engine</a></li>
-            <li><a href="https://hub.docker.com/">Docker Hub</a></li>
-        </ul>
-    </div> <br>
+      <h3>2. Official Documentation</h3>
+      <br />
+      <ul>
+        <li><a href="https://docs.docker.com/">Docker</a></li>
+        <li><a href="https://kubernetes.io/docs/home/">Kubernetes</a></li>
+        <li>
+          <a href="https://kubernetes.io/docs/reference/kubectl/cheatsheet/"
+            >Kubectl cheatsheet</a
+          >
+        </li>
+        <li><a href="https://minikube.sigs.k8s.io/docs/start/">Minikube</a></li>
+        <li>
+          <a href="https://cloud.google.com/kubernetes-engine?hl=en"
+            >Google Kubernetes Engine</a
+          >
+        </li>
+        <li><a href="https://hub.docker.com/">Docker Hub</a></li>
+      </ul>
+    </div>
+    <br />
 
     <hr />
 
     <div class="sec6">
-        <h3>Contact me</h3>
-        <ul>
-            <li><a target="_blank" href="https://github.com/adarsh-k27r/node-api-GKE"><i class="fa-brands fa-github fa-2xl"></i></a>
-            </li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/adarsh-k27r/"><i
-                        class="fa-brands fa-linkedin fa-2xl" style="color: #145fe1;"></i></a></li>
-            <li><i class="fa-solid fa-envelope fa-lg" style="color: #f2a602;"></i> &nbsp; 21cs3060@rgipt.ac.in</li>
-            <li><i class="fa-solid fa-phone fa-lg" style="color: #2d5ba9;"></i> &nbsp; (+91)7903737429</li>
-            <li><a target="_blank" href="https://twitter.com/adarsh_k27r"><i
-                        class="fa-brands fa-x-twitter fa-2xl"></i></a></li>
-            <li><a target="_blank" href="https://adarshk27r.hashnode.dev/"><i class="fa-brands fa-hashnode fa-2xl"
-                        style="color: #175acf;"></i></a></li>
-            <li><a target="_blank" href="https://65191aa781b82d272f9746a1--portfolio-vite3d.netlify.app/"><i
-                        class="fa-solid fa-globe fa-2xl" style="color: #d21414;"></i></a></li>
-        </ul>
+      <h3>Contact me</h3>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/adarsh-k27r/microservice-k8s"
+            ><i class="fa-brands fa-github fa-2xl"></i
+          ></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/adarsh-k27r/"
+            ><i class="fa-brands fa-linkedin fa-2xl" style="color: #145fe1"></i
+          ></a>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope fa-lg" style="color: #f2a602"></i>
+          &nbsp; 21cs3060@rgipt.ac.in
+        </li>
+        <li>
+          <i class="fa-solid fa-phone fa-lg" style="color: #2d5ba9"></i> &nbsp;
+          (+91)7903737429
+        </li>
+        <li>
+          <a target="_blank" href="https://twitter.com/adarsh_k27r"
+            ><i class="fa-brands fa-x-twitter fa-2xl"></i
+          ></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://adarshk27r.hashnode.dev/"
+            ><i class="fa-brands fa-hashnode fa-2xl" style="color: #175acf"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-globe fa-2xl" style="color: #d21414"></i
+          ></a>
+        </li>
+      </ul>
     </div>
 
-    <script src="https://kit.fontawesome.com/e0d300c368.js" crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/e0d300c368.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

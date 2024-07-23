@@ -16,6 +16,6 @@ const server = app.listen(app.get("port"), function () {
   const host = server.address().address
   const port = server.address().port
 
-  console.log("Node.js API app listening at http://%s:%s", host, port)
+  console.log("Node.js API listening on http://%s:%s", host, port)
 
 })
