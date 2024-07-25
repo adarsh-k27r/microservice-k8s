@@ -2,10 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: node-svc-lb
+  labels:
+    app: node-pod
 spec:
+  type: LoadBalancer
   selector:
     app: node-pod
   ports:
-  - port: 80
-    targetPort: 4000
-  type: LoadBalancer
+    - protocol: TCP
+      port: 8080 # Port that the service listens on internally
+      targetPort: 4000 # Port that the container listens on
+
